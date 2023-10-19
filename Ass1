@@ -384,6 +384,7 @@ void SkewImageRight_filter(){
     cout<<"Please enter degree to skew up:";
         double rad; cin>>rad;
     int x;
+rad=90-rad;
     rad=(rad*22)/(180*7);
     x=(tan(rad)*256)/(tan(rad)+1);
     double step=SIZE-x;
